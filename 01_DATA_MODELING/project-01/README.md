@@ -33,8 +33,9 @@ GROUP BY T3.NAME, T2.TITLE \
 ORDER BY TOTAL DESC \
 LIMIT 10
 
+![](/01_DATA_MODELING/project-01/images/img01.jfif)
 
-### the total plays by week
+### total plays by week
 
 %sql SELECT  T2.YEAR, T2.MONTH, T2.WEEK, COUNT(T1.SONGPLAY_ID) AS TOTAL_PLAYS \
 FROM SONGPLAYS T1 \
@@ -42,7 +43,7 @@ JOIN TIME T2 ON T1.START_TIME = T2.START_TIME \
 GROUP BY T2.YEAR, T2.MONTH, T2.WEEK \
 ORDER BY T2.YEAR, T2.MONTH, T2.WEEK
 
-
+![](/01_DATA_MODELING/project-01/images/img02.jfif)
 
 ### total users by level
 
@@ -50,4 +51,4 @@ ORDER BY T2.YEAR, T2.MONTH, T2.WEEK
 FROM USERS T1 \
 GROUP BY T1.LEVEL
 
-[![total users by level](/images/img03.jpg)"total users by level"]
+![](/01_DATA_MODELING/project-01/images/img03.jfif)
